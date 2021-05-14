@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="imagem/png" href="/Imagens/iconjar-icon.svg">
+</head>
+<body>
+    <img src="/Imagens/Frame 3.png" alt="" width="100px" id="imgfix">
+    <section id="navbar"><!--NavBar-->
+        <img src="/Imagens/logo.png" alt="Logo IconJar" width="100vh" height="100%">
+        <div id="menu" ><!--menu-->
+            <a href=""><h3>Home</h3></a>
+            <a href=""><h3>Resources</h3></a>
+            <a href=""><h3>Updates</h3></a>
+            <a href=index.html><h3>Pricing</h3></a>
+            <a href="#" id="myBtn" style="align-self: center;">Try for free</a><!-- Trigger/Open The Modal 1 -->
+            <!--/IconJar.zip-->
+        </div>
+
+        <div id="myModal" class="modal"><!--Modal 1-->
+            <div class="modal-content"><!-- Modal content -->
+                <span class="close">&times;</span><!--Sinal de multiplicação-->
+                <img src="/Imagens/logo.svg" alt="" width="100%">
+                <h2>Thanks for downloading IconJar!</h2>
+               <p> Your download will begin automatically.</p>
+               <p> If it doesn't, <a href="/IconJar.zip">click here</a> to try again.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="arealp"><!--LadingPage-->
+        <div id="title"><h1>Get started with IconJar</h1></div>
+        <div class="arealp1">
+            <!--INICIO DE FORM-->
+                <form action="#" target="_self" method="POST" autocomplete="on" id="areaform" onsubmit="return validaForm();" name="form"> 
+                    <section style="padding: 10%;"><!--Backgrounds sections-->
+                    <h2>Buy a license</h2>
+                        <h3 id="validateSystem">⚠️ It looks like you're not running macOS. Please note that IconJar isn't compatible with Windows or Linux.</h3><!--Notifica que IconJar não é compatível com Windows ou Linux-->
+                <div  id="container1"><!--Background white-->
+                        <h3>Payment method</h3><!--Payment type-->
+                    <div class="cardPayment"><!--CARD1-->
+                        <input type="radio" name="method" id="Annually"  value="Annually">
+                        <label for="Annually" class="method"><span class="whyMethod">Annually</span><span class="description">€29.99 now, then €24.99/year</span></label><br>
+                    </div>
+                    <div class="cardPayment" style="margin-bottom: 2vh;"><!--CARD2-->
+                        <input type="radio" id="Once" name="method" class="cardPayment" value="">
+                        <div style="flex-direction: column;">
+                        <label for="Once" class="method"><span class="whyMethod">Once</span><span class="description">Lifetime for €69.99</span></label>
+                        <!--TOOLTIP-->
+                        <span class="tooltiptext">Pay for IconJar 2 once. Major updates will become available as a paide upgrade.</span>
+
+                        </div>
+                    </div>
+
+                    <p id="validateMethods" class="validate">⚠️Choose a payment method!⚠️</p>
+
+                    <div id="upcode"><!--UPGRAD CODE-->
+                        <div>
+                        <input type="checkbox" name="upgrading" id="up" onclick="hidefunction();">
+                        <label for="up">I’m upgrading from IconJar v1</label>
+                        </div>
+                        <input type="text" name="idUpgrad" id="idtext" placeholder="id11234567891odr">
+                        <p id="validateIdText" class="validate">🙈The license you entered was not found.</p>
+                    </div> 
+                </div> 
+                </section>
+                <section style="padding: 10%;background-color: rgba(195, 238, 252, 0.253);">        
+                        <div id="container2">
+                            <div id="flexrow2"><!--flex row-->
+                                <div class="qtd"><h4>Quantity</h4></div>
+                                <div class="email"><h4>Email address</h4></div>
+                            </div>
+                            <div id="flexrow1">
+                                <input type="number" class="inputstyle" name="quantity" min="1" max="20" value="1" style="width: 20%;">
+                                <input type="email" name="" class="inputstyle" placeholder="maria@exemplo.com">
+                            </div>
+                            <p class="textp">By clicking "Buy now", you accept our <a href="https://geticonjar.com/terms-of-use/">terms of use</a> and
+                            <a href="https://geticonjar.com/privacy-policy/">privacy policy.</a></p>
+                            <input type="submit" id="submit" name="Buy">
+                    </div>
+                </section>
+                </form><!--FIM DE FORM-->
+            
+            <section id="informations"><!--Informations-->
+                <div>
+                    <img src="/Imagens/safe.svg" alt="" width="50vh">
+                    <div><h2>Securely checkout with <a href="https://paddle.com/" id="paddle">paddle</a></h2></div>
+                    <p>We trust Paddle for handling the entire end-to-end checkout flow. From buying a license to receiving it in your email inbox!</p>
+                </div>
+                <div>
+                    <img src="/Imagens/update.svg" alt="" width="50vh">
+                    <h2>Receive frequent updates</h2>
+                    <p>IconJar is actively under development, and we listen carefully to your feedback to evolve our product.</p>
+                </div>
+                <div></div>
+                    <a id="cardsetapp" href="https://setapp.com/pt-br/apps/iconjar?utm_campaign=pricing_page_callout&utm_content=link&utm_medium=vendor_program&utm_source=IconJar">
+                        <img src="/Imagens/setapplogo.png" alt="" width="150vh">
+                        <p>IconJar is alsoo available on Setapp for $9.99/mo.</p>
+                        <span>&gt;</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <section style="margin-top: 10vh;"><!--companies-->
+            <div style="margin-bottom: 10vh;text-align: center;"><h3>Selected companies using IconJar:</h3></div>
+            <div id="companies">
+                <div class="companies1">
+                <img src="/Imagens/discord@2x.webp" alt>
+                <img src="/Imagens/google@2x.webp" alt="">
+                <img src="/Imagens/intercom@2x.webp" alt="">
+                <img src="/Imagens/microsoft@2x.webp" alt="">
+                </div>
+                <div class="companies1">
+                <img src="/Imagens/salesforce@2x.webp" alt="">
+                <img src="/Imagens/shopify@2x.webp" alt="">
+                <img src="/Imagens/airbnb@2x.webp" alt="">
+                <img src="/Imagens/atlassian@2x.webp" alt="">
+                </div>
+            </div>
+
+        </section>
+    </section>
+    <section><!--Footer-->
+        <div>
+        <img src="/Imagens/app-icon@2x.webp" alt="">
+        <h1>Rather try before you buy?</h1>
+        <p>Try IconJar for 14 days at no costs.</p>
+        <a href="/IconJar.zip" id="myBtn1">Try IconJar for free</a>
+        </div>
+        
+        <footer>
+            <div>
+                <p>A project by <a href="https://twitter.com/daveyheuser">Davey Heuser</a> and <a href="https://twitter.com/curthard89">Curtis Hard</a>Curtis Hard</p>
+            </div>
+            <div>
+                <a href="">Terms of use</a>
+                <a href="">Privacy policy</a>
+                <a href="">Support</a>
+            </div>
+        </footer>
+    </section>
+ <script src="/script.js"></script>   
+</body>
+</html>

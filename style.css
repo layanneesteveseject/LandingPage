@@ -1,0 +1,342 @@
+body{
+    margin: 0px;
+    background: rgb(228, 243, 255);
+    background-image: url(/Imagens/Vector\ 6.png);
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+#informations{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+    margin-top: 40vh;
+}
+
+
+/*INICIO DO FORMULÁRIO*/
+#flexrow1{
+    display: flex;
+    flex-direction: row;
+    column-gap: 6vh;
+    }
+    #flexrow2{
+        display: flex;
+        flex-direction: row;
+        column-gap: 12vh;
+    }
+    
+    #areaform{
+        display: flex;
+        flex-direction: column;
+        text-align:left;
+        border-style: solid;
+        border-radius: 10px;
+        border-width: 1px;
+        border-color:#CCCCCC;
+        -webkit-box-shadow: 1px 1px 15px -7px #CCCCCC; 
+        box-shadow: 1px 1px 15px -7px #CCCCCC;
+        zoom: 100%;
+        background-color: #ffffff !important;
+        min-width: 60vh;
+    }
+    
+    
+    .tooltiptext {
+        color:#FD7638 ;
+        font-size: 80%;
+        font-weight: 700;
+    }
+    
+      #validateSystem{
+          background-color:rgb(250, 235, 236);
+          color:#FD7638 ;
+          border-radius: 7px;
+          padding: 5%;
+          font-size: 100%;
+      }
+    .textp a{
+        display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      position: relative;
+      overflow: hidden;
+    }
+    .textp a:before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: #2098D1;
+        height: 4px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    
+    }
+    .textp:hover:before, .textp:focus:before, .textp:active:before{
+        right: 0;
+    }
+    
+    #idtext{
+        display: none;
+        background: #FFFFFF;
+        border: 0.7px solid #CCCCCC;
+        box-shadow: 0px 1px 2px 1px rgba(204, 204, 204, 0.2);
+        border-radius: 7px;
+        height: 6vh;
+        padding-left: 5%;
+        font-size: 100%;
+    }
+    #idtext:focus {
+        outline: none !important;
+        border:1px solid #3366FF;
+        box-shadow: 0px 1px 2px 1px rgba(204, 204, 204, 0.2);
+    }
+    .inputstyle{
+        background: #FFFFFF;
+        border: 0.7px solid #CCCCCC;
+        box-shadow: 0px 1px 2px 1px rgba(204, 204, 204, 0.2);
+        border-radius: 7px;
+        height: 6vh;
+        padding-left: 5%;
+        font-size: 100%;
+        width: 100%;
+    }
+    
+    .cardPayment{
+        display: flex;
+        align-items: center;
+        column-gap: 1vh;
+        border: 0.7px solid #CCCCCC;
+        box-shadow: 0px 1px 2px 1px rgba(204, 204, 204, 0.2);
+        border-radius: 7px;
+        padding: 2vh 3vh;
+    }
+    .method{
+        display: flex;
+        flex-direction: column;
+    }
+    .description{ opacity: 80%;}
+    #container1{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+    }
+    #upcode{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+    }
+    
+    #validateIdText{
+        display: none;
+    }
+    #validateMethods{
+        display: none;
+    }
+    .validate{
+        color: red;
+        font-weight: 600;
+    }
+/*FIM DO FORMULÁRIO*/
+
+
+
+
+/*MODAL*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #d4effc;
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #2098D1;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+/*MODAL END*/
+
+
+
+
+
+#imgfix{
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    width: 80px;
+    cursor: pointer;
+    transition:0.5s;
+}
+#imgfix:hover{
+    width: 15vh;
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#menu a{
+    margin-right: 2vh;
+    text-decoration: none;
+    color: #fafafa;
+    transition: 0.5s;
+    font-size: 90%;
+}
+#menu a:hover{
+    color: black;
+}
+.arealp{
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 20vh 2vh 20vh;
+}
+.arealp1{
+    display: flex;
+    column-gap: 10vh;
+}
+#myBtn{
+    margin: solid ;
+    background-color: #28D844;
+    border-radius: 5px;
+    padding: 1vh;
+}
+#title{
+    font-size: 300%;
+}
+#paddle{
+
+    color: #28D844;
+}
+#companies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    row-gap: 5vh;
+}
+.companies1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5vh;
+
+}
+#submit{
+    background-color: #28D844;
+
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 1vh;
+    cursor: pointer;
+    height: 5vh;
+    font-weight: 600;
+    color: #fafafa;
+    transition: 0.6s;
+}
+#submit:hover{
+    background-color: #fafafa;
+    border: solid 2px #28D844;
+    color: #28D844;
+}
+#cardsetapp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5vh;
+    background: #FFFFFF;
+    border: 0.7px solid #CCCCCC;
+    box-shadow: 0px 1px 2px 1px rgba(204, 204, 204, 0.2);
+    border-radius: 7px;
+    padding: 3vh;
+    text-decoration: none;
+    color: #585858;
+    transition: 0.5s;
+}
+#cardsetapp span{
+    font-size: 200%;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #28D844 !important;
+}
+#cardsetapp:hover{
+    border: 0.7px solid #3366FF;
+    box-shadow: 0px 1px 2px 5px #2099d14d;
+}
+#cardsetapp:hover span{
+    color: #2098D1 !important;
+}
+
+
+
+    @media only screen and (max-width: 800px) {
+        .arealp1{
+            flex-direction: column;
+        }
+        #informations{
+            margin-top: 5vh;
+        }
+        #imgfix{
+            left:80%
+        }
+      }
+    
+    @media only screen and (max-width: 1480px) {
+
+        .arealp{
+            padding: 5vh 10vh 2vh 10vh;
+        }
+
+    }
+    @media only screen and (max-width:400px){
+        .arealp1{
+            font-size: 150%;
+        }
+    }
+    
