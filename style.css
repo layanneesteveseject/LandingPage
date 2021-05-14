@@ -312,7 +312,14 @@ body{
 #cardsetapp:hover span{
     color: #2098D1 !important;
 }
-
+#endsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15vh;
+}
 
 
     @media only screen and (max-width: 800px) {
