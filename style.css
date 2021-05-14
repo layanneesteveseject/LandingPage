@@ -319,7 +319,35 @@ body{
     justify-content: center;
     text-align: center;
     margin-top: 15vh;
+    background: #2FB9D8;
 }
+#footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 85vh;
+
+}
+#endcard{
+    margin-top: 10vh;
+    border-radius: 30px;
+    padding: 5vh;
+    margin-bottom: 25vh;
+}
+#endcard a{
+    text-decoration: none;
+    color: #fafafa;
+    border-radius: 5px;
+    padding: 2vh;
+    background-color: rgb(32, 31, 31);
+    box-shadow: 0px 1px 2px 1px rgba(204, 204, 204, 0.2);
+}
+#endsection a{
+    text-decoration: none;
+    color: #fafafa;
+}
+
+
 
 
     @media only screen and (max-width: 800px) {
@@ -331,6 +359,9 @@ body{
         }
         #imgfix{
             left:80%
+        }
+        #footer{
+            column-gap: 5vh;
         }
       }
     
