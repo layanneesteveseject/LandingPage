@@ -35,9 +35,7 @@ body{
         border-color:#CCCCCC;
         -webkit-box-shadow: 1px 1px 15px -7px #CCCCCC; 
         box-shadow: 1px 1px 15px -7px #CCCCCC;
-        zoom: 100%;
         background-color: #ffffff !important;
-        min-width: 60vh;
     }
     
     
@@ -193,20 +191,6 @@ body{
 /*MODAL END*/
 
 
-
-
-
-#imgfix{
-    position: fixed;
-    top: 80%;
-    left: 90%;
-    width: 80px;
-    cursor: pointer;
-    transition:0.5s;
-}
-#imgfix:hover{
-    width: 15vh;
-}
 #navbar{
     display: flex;
     flex-direction: row;
@@ -254,19 +238,16 @@ body{
 }
 #companies{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-left: 20vh;
-    margin-right: 20vh;
-    row-gap: 5vh;
-}
-.companies1{
-    display: flex;
-    align-items: center;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-left: 10vh;
+    margin-right:10vh;
+    flex-wrap:wrap;
     justify-content: center;
-    column-gap: 5vh;
-
+    column-gap: 4vh;
 }
+
 #submit{
     background-color: #28D844;
 
@@ -357,11 +338,12 @@ body{
         #informations{
             margin-top: 5vh;
         }
-        #imgfix{
-            left:80%
-        }
         #footer{
             column-gap: 5vh;
+        }
+        #companies{
+            margin-left: 5vh;
+            margin-right: 5vh;
         }
       }
     
@@ -372,9 +354,20 @@ body{
         }
 
     }
-    @media only screen and (max-width:400px){
+    @media only screen and (max-width:500px){
         .arealp1{
-            font-size: 150%;
+            font-size: 120%;
+        }
+        #companies{
+            flex-direction: column;
+            flex-wrap: nowrap;
+            row-gap: 4vh;
+            margin-left: 2vh;
+            margin-right: 2vh;
         }
     }
-    
+@media only screen and (max-width:400px){
+    .arealp{
+    padding: 5vh 1vh 2vh 1vh;
+    }
+}
